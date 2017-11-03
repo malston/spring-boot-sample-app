@@ -1,0 +1,14 @@
+subprojects {
+    apply plugin: 'java'
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        compile group: 'org.projectlombok', name: 'lombok', version: '1.16.12'
+
+        testCompile 'junit:junit:4.12'
+        testCompile group: 'org.hamcrest', name: 'hamcrest-all', version: '1.3'
+    }
+}

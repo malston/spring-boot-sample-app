@@ -1,0 +1,5 @@
+rootProject.name = 'spring-boot-sample-app'
+
+include 'core'
+include 'api'
+include 'sql-backed-persistence'
