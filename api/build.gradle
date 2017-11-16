@@ -3,8 +3,12 @@ dependencies {
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '1.4.3.RELEASE'
 
     compile project(':sql-backed-persistence')
+    // Uncomment h2 dependency to run acceptance tests locally
+//    compile group: 'com.h2database', name: 'h2', version: '1.4.193'
 
+    // Comment h2 dependency to run acceptance tests locally
+    testCompile group: 'com.h2database', name: 'h2', version: '1.4.193'
     testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '1.4.3.RELEASE'
     testCompile group: 'com.jayway.restassured', name: 'rest-assured', version: '2.9.0'
-    testCompile group: 'com.h2database', name: 'h2', version: '1.4.193'
+    testCompile group: 'com.github.stefanbirkner', name: 'system-rules', version: '1.16.0'
 }
